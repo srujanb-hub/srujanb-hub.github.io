@@ -5,18 +5,48 @@ html {
     font-family: 'Times New Roman', Times, serif;
 }
 
-h1 {
-    font-size: 60px;
-    text-align: center;
-    text-shadow: 2px 2px 2px black;
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+
+    h1 {
+        font-size: 60px;
+        text-align: center;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    button {
+        background-color: linear-gradient(45deg, #d72b00, #ffc76c);
+        border: none;
+        border-radius: 25px;
+        color: #b28500;
+        padding: 12px 24px;
+        cursor: pointer;
+        font-size: 1rem;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        appearance: none;
+    }
+
+    button:hover {
+        background-color: linear-gradient(45deg, #ffc76c, #d72b00);
+        color: #060047;
+        transform: translateY(-2px);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    button:active {
+        transform: translateY(0);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
 }
 
-p {
-    font-size: 20px;
-    text-align: center;
-}
-
-button {
-    font-size: 20px;
-    align-self: center;
-}
