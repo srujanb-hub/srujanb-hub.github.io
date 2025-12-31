@@ -1,8 +1,64 @@
 html {
-    background-color: #001fbd;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #001fbd;
     font-style: normal;
     font-family: 'Times New Roman', Times, serif;
+    align-content: center;
+    font-size: 14px;
+}
+
+/* Remove bullets and reset default spacing */
+menu {
+    list-style-type: none;       /* 🔸 No dots */
+    margin: 0;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;             /* Optional: wraps on small screens */
+    gap: 20px;                   /* Space between items */
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;     /* Center menu items (optional) */
+}
+
+/* Ensure all list items are styled consistently */
+menu li {
+    flex-grow: 1;
+    /* Adjust the width of list item */
+    flex-basis: calc(2% - 30px); /* Adjust based on desired items per row */
+    min-width: 30px;             /* Prevent tiny squished buttons */
+}
+
+/* Style the links inside menu items */
+menu li a {
+    display: block;
+    width: 90%;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(45deg, #59b5f7, #6c76ff);
+    border: 2px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+/* 🔸 Hover highlight effect */
+menu li a:hover {
+    background: linear-gradient(45deg, #6c76ff, #59b5f7); /* Flipped gradient */
+    transform: translateY(-2px);
+    color: #ffffff; /* Reaffirm text color */
+}
+
+/* Optional: active/clicked state */
+menu li a:active {
+    transform: translateY(0);
+}
+
+/* Optional: focus for keyboard navigation (accessibility) */
+menu li a:focus {
+    outline: 2px solid blue;
+    outline-offset: 2px;
+    border-radius: 30px;
 }
 
 body {
@@ -13,6 +69,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 20px;
+    text-align: center;
 
     h1 {
         font-size: 60px;
@@ -25,7 +82,51 @@ body {
         text-align: center;
     }
 
-    button {
+    .contact-links {
+        list-style: none;   /* Remove bullets */
+        padding: 0;
+        margin: 0;
+        display: flex;      /* Make items side by side */
+        gap: 10px;          /* Space between items */
+        flex-wrap: wrap;    /* Wrap on small screens */
+        justify-content: center;
+    }
+
+    .contact-links li {
+        margin: 0;      /* Remove default margin */
+    }
+
+    .contact-links a {
+        display: block;
+        width: 80%;
+        padding: 10px 12px;
+        text-align: center;
+        text-decoration: none;
+        color: #001fbd;
+        background: linear-gradient(45deg, #59b5f7, #6c76ff);
+        border: 2px solid white;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: transform 0.2s ease, background 0.3s ease;
+    }
+
+    .contact-links a:hover {
+        background: linear-gradient(45deg, #6c76ff, #59b5f7); /* Flipped gradient */
+        transform: translateY(-2px);
+        color: #ffffff; /* Reaffirm text color */
+    }
+
+    .contact-links a:active {
+        transform: translateY(0);
+    }
+
+    .contact-links a:focus {
+        outline: 2px solid blue;
+        outline-offset: 2px;
+        border-radius: 20px;
+    }
+
+    /* button {
         background-color: linear-gradient(45deg, #d72b00, #ffc76c);
         border: none;
         border-radius: 25px;
@@ -47,6 +148,5 @@ body {
     button:active {
         transform: translateY(0);
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    }
+    } */
 }
-

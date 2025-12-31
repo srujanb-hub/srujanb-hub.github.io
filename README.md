@@ -1,5 +1,5 @@
-__A Sample template project__
-- A custom web application to facilitate computer science concept templates.
+__My Portfolio Project__
+- A custom web application to facilitate my personal portfolio.
 
 - Tech Stack:
     - Frontend:
