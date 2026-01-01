@@ -9,3 +9,10 @@ _It can have version, date of change and relevant changes of that release versio
 
 ## [0.2.0] - [31-Dec-2025]
 - Redirecting this custom web application to personal portfolio
+
+## [0.3.0] - [01-Jan-2026]
+- Partial fix of font and icon size dynamic update
+    - Cascading Style Sheet update
+    - FAQ update
+- Experience update
+- Removal of nested blocks in CSS

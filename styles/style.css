@@ -4,14 +4,14 @@ html {
     font-style: normal;
     font-family: 'Times New Roman', Times, serif;
     align-content: center;
-    font-size: 14px;
+    font-size: small;
 }
 
 /* Remove bullets and reset default spacing */
 menu {
     list-style-type: none;       /* 🔸 No dots */
     margin: 0;
-    padding: 10px 20px;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;             /* Optional: wraps on small screens */
     gap: 20px;                   /* Space between items */
@@ -31,18 +31,18 @@ menu li {
 menu li a {
     display: block;
     width: 90%;
-    padding: 10px 12px;
+    padding: clamp(0.5rem, 1.5vw, 1rem) clamp(0.75rem, 2vw, 1.5rem); /* scales padding */
     text-align: center;
     text-decoration: none;
     color: #ffffff;
     background: linear-gradient(45deg, #59b5f7, #6c76ff);
     border: 2px solid white;
-    border-radius: 30px;
+    border-radius: clamp(1rem, 4vw, 2rem); /* 16px -> 32px */
     cursor: pointer;
     transition: transform 0.2s ease, background 0.3s ease;
+    font-size: clamp(0.875rem, 2vw, 1.125rem); /* Responsive font size - 14px -> 18px */
 }
 
-/* 🔸 Hover highlight effect */
 menu li a:hover {
     background: linear-gradient(45deg, #6c76ff, #59b5f7); /* Flipped gradient */
     transform: translateY(-2px);
@@ -64,89 +64,67 @@ menu li a:focus {
 body {
     display: flex;
     flex-direction: column;
-    justify-content: top;
+    justify-content: flex-start;
     align-items: center;
     height: 100vh;
     margin: 0;
     padding: 20px;
     text-align: center;
+}
 
-    h1 {
-        font-size: 60px;
-        text-align: center;
-        text-shadow: 2px 2px 2px black;
-    }
 
-    p {
-        font-size: 20px;
-        text-align: center;
-    }
+h1 {
+    font-size: clamp(1.5rem, 4vw, 3.75rem); /* Responsive font size - 24px to 60px */
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
 
-    .contact-links {
-        list-style: none;   /* Remove bullets */
-        padding: 0;
-        margin: 0;
-        display: flex;      /* Make items side by side */
-        gap: 10px;          /* Space between items */
-        flex-wrap: wrap;    /* Wrap on small screens */
-        justify-content: center;
-    }
+p {
+    font-size: clamp(1rem, 2.5vw, 1.25rem); /* Responsive font size - 16px to 20px */
+    text-align: center;
+}
 
-    .contact-links li {
-        margin: 0;      /* Remove default margin */
-    }
+.contact-links {
+    list-style: none;   /* Remove bullets */
+    padding: 0;
+    margin: 0;
+    display: flex;      /* Make items side by side */
+    gap: 10px;          /* Space between items */
+    flex-wrap: wrap;    /* Wrap on small screens */
+    justify-content: center;
+}
 
-    .contact-links a {
-        display: block;
-        width: 80%;
-        padding: 10px 12px;
-        text-align: center;
-        text-decoration: none;
-        color: #001fbd;
-        background: linear-gradient(45deg, #59b5f7, #6c76ff);
-        border: 2px solid white;
-        border-radius: 20px;
-        cursor: pointer;
-        transition: transform 0.2s ease, background 0.3s ease;
-    }
+.contact-links li {
+    margin: 0;      /* Remove default margin */
+}
 
-    .contact-links a:hover {
-        background: linear-gradient(45deg, #6c76ff, #59b5f7); /* Flipped gradient */
-        transform: translateY(-2px);
-        color: #ffffff; /* Reaffirm text color */
-    }
+.contact-links a {
+    display: block;
+    width: 80%;
+    padding: clamp(0.5rem, 1.5vw, 1rem) clamp(0.75rem, 2vw, 1.25rem); /* scales padding */
+    text-align: center;
+    text-decoration: none;
+    color: #001fbd;
+    background: linear-gradient(45deg, #59b5f7, #6c76ff);
+    border: 2px solid white;
+    border-radius: clamp(0.75rem, 3vw, 1.5rem); /* 12px -> 24px */
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+    font-size: clamp(00.875rem, 2vw, 1rem); /* Responsive font size - 14px to 16px */
+}
 
-    .contact-links a:active {
-        transform: translateY(0);
-    }
+.contact-links a:hover {
+    background: linear-gradient(45deg, #6c76ff, #59b5f7); /* Flipped gradient */
+    transform: translateY(-2px);
+    color: #ffffff; /* Reaffirm text color */
+}
 
-    .contact-links a:focus {
-        outline: 2px solid blue;
-        outline-offset: 2px;
-        border-radius: 20px;
-    }
+.contact-links a:active {
+    transform: translateY(0);
+}
 
-    /* button {
-        background-color: linear-gradient(45deg, #d72b00, #ffc76c);
-        border: none;
-        border-radius: 25px;
-        color: #b28500;
-        padding: 12px 24px;
-        cursor: pointer;
-        font-size: 1rem;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-        appearance: none;
-    }
-
-    button:hover {
-        background-color: linear-gradient(45deg, #ffc76c, #d72b00);
-        color: #060047;
-        transform: translateY(-2px);
-        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-    }
-
-    button:active {
-        transform: translateY(0);
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    } */
+.contact-links a:focus {
+    outline: 2px solid blue;
+    outline-offset: 2px;
+    border-radius: 20px;
 }
