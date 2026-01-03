@@ -16,3 +16,9 @@ _It can have version, date of change and relevant changes of that release versio
     - FAQ update
 - Experience update
 - Removal of nested blocks in CSS
+
+## [0.4.0] - [03-Jan-2026]
+- Resume section update
+- Profile picture update
+- About me description update
+- Partial experience description update
