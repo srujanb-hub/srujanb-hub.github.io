@@ -22,3 +22,12 @@ _It can have version, date of change and relevant changes of that release versio
 - Profile picture update
 - About me description update
 - Partial experience description update
+
+## [0.5.0] - [06-Jan-2026]
+- Section update
+    - class update
+    - Experience partial description update
+- CSS custom properties update
+    - Reusable variable update
+- Hyper link stylesheet update
+- Section wise background property update

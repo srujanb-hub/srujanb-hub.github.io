@@ -9,4 +9,4 @@ __My Portfolio Project__
 |   1        | HTML (Hyper Text Markup Language)  | To structure/organize the web application elements|
 |   2        | CSS (Cascading Style Sheet)        | To Style the custom web application               |
 
-> Note: More details are in progress
+> Note: As changes are expected to reflect immediately, I am committing to the main branch (generally this method is not recommended). More details are in progress.

@@ -1,5 +1,19 @@
+:root {
+    --default-color: #ffffff;   /* white */
+    --default-hover-color: linear-gradient(135deg, #59b5f7, #6c76ff);
+    --default-border-radius: clamp(1rem, 4vw, 2rem);    /* scales border radius 16px -> 32px */
+    --default-hyperlink-color: #001fbd; /* dark blue */
+    --default-hyperlink-hover-color: orange; /* brighter blue */
+    --default-padding: clamp(0.5rem, 1.5vw, 1rem); /* scales padding 8px -> 16px */
+    --section-primary-background: linear-gradient(135deg, #59b5f7, #6c76ff);
+    --section-secondary-background: linear-gradient(135deg, #6c76ff, #59b5f7);
+    --section-padding: clamp(1rem, 2vw, 1.5rem); /* scales padding 16px -> 24px */
+    --section-min-width: 30%;                     /* minimum width for sections */
+    --section-margin: clamp(2rem, 1vw, 1rem);  /* scales margin 32px -> 16px */
+}
+
 html {
-    background-color: #ffffff;
+    background-color: var(--default-color);
     color: #001fbd;
     font-style: normal;
     font-family: 'Times New Roman', Times, serif;
@@ -15,7 +29,7 @@ menu {
     display: flex;
     flex-wrap: wrap;             /* Optional: wraps on small screens */
     gap: 20px;                   /* Space between items */
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
     justify-content: center;     /* Center menu items (optional) */
 }
 
@@ -34,10 +48,10 @@ menu li a {
     padding: clamp(0.5rem, 1.5vw, 1rem) clamp(0.75rem, 2vw, 1.5rem); /* scales padding */
     text-align: center;
     text-decoration: none;
-    color: #ffffff;
+    color: var(--default-color);
     background: linear-gradient(45deg, #59b5f7, #6c76ff);
-    border: 2px solid white;
-    border-radius: clamp(1rem, 4vw, 2rem); /* 16px -> 32px */
+    border: 2px solid var(--default-color);
+    border-radius: var(--default-border-radius);
     cursor: pointer;
     transition: transform 0.2s ease, background 0.3s ease;
     font-size: clamp(0.875rem, 2vw, 1.125rem); /* Responsive font size - 14px -> 18px */
@@ -46,7 +60,7 @@ menu li a {
 menu li a:hover {
     background: linear-gradient(45deg, #6c76ff, #59b5f7); /* Flipped gradient */
     transform: translateY(-2px);
-    color: #ffffff; /* Reaffirm text color */
+    color: var(--default-hover-color); /* Reaffirm text color */
 }
 
 /* Optional: active/clicked state */
@@ -72,7 +86,6 @@ body {
     text-align: center;
 }
 
-
 h1 {
     font-size: clamp(1.5rem, 4vw, 3.75rem); /* Responsive font size - 24px to 60px */
     text-align: center;
@@ -82,6 +95,94 @@ h1 {
 p {
     font-size: clamp(1rem, 2.5vw, 1.25rem); /* Responsive font size - 16px to 20px */
     text-align: center;
+}
+
+a {
+  color: var(--default-hyperlink-color, #007bff);
+  text-decoration: none;
+  border-radius: var(--default-border-radius, 4px);
+  padding: 0.2em 0.3em;
+  transition: transform 0.2s ease, background 0.3s ease;
+  display: inline-block;
+}
+
+a:hover {
+  color: var(--default-hyperlink-hover-color, #0056b3);
+  background-color: var(--default-hyperlink-highlight, rgba(154, 205, 50, 0.3));
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.about-section {
+    background: var(--section-primary-background);
+    padding: var(--section-padding);
+    border-radius: var(--default-border-radius);
+    color: var(--default-color);
+    margin: var(--section-margin);
+    min-width: var(--section-min-width);
+}
+
+.experience-section {
+    background: var(--section-secondary-background);
+    padding: var(--section-padding);
+    border-radius: var(--default-border-radius);
+    color: var(--default-color);
+    margin: var(--section-margin);
+    min-width: var(--section-min-width);
+}
+
+.projects-section {
+    background: var(--section-primary-background);
+    padding: var(--section-padding);
+    border-radius: var(--default-border-radius);
+    color: var(--default-color);
+    margin: var(--section-margin);
+    min-width: var(--section-min-width);
+}
+
+.skills-section {
+    background: var(--section-secondary-background);
+    padding: var(--section-padding);
+    border-radius: var(--default-border-radius);
+    color: var(--default-color);
+    margin: var(--section-margin);
+    min-width: var(--section-min-width);
+}
+
+.education-section {
+    background: var(--section-primary-background);
+    padding: var(--section-padding);
+    border-radius: var(--default-border-radius);
+    color: var(--default-color);
+    margin: var(--section-margin);
+    min-width: var(--section-min-width);
+}
+
+.awards-section {
+    background: var(--section-secondary-background);
+    padding: var(--section-padding);
+    border-radius: var(--default-border-radius);
+    color: var(--default-color);
+    margin: var(--section-margin);
+    min-width: var(--section-min-width);
+}
+
+.resume-section {
+    background: var(--section-primary-background);
+    padding: var(--section-padding);
+    border-radius: var(--default-border-radius);
+    color: var(--default-color);
+    margin: var(--section-margin);
+    min-width: var(--section-min-width);
+}
+
+.contact-section {
+    background: var(--section-secondary-background);
+    padding: var(--section-padding);
+    border-radius: var(--default-border-radius);
+    color: var(--default-color);
+    margin: var(--section-margin);
+    min-width: var(--section-min-width);
 }
 
 .contact-links {
@@ -106,7 +207,7 @@ p {
     text-decoration: none;
     color: #001fbd;
     background: linear-gradient(45deg, #59b5f7, #6c76ff);
-    border: 2px solid white;
+    border: 2px solid var(--default-color);
     border-radius: clamp(0.75rem, 3vw, 1.5rem); /* 12px -> 24px */
     cursor: pointer;
     transition: transform 0.2s ease, background 0.3s ease;
@@ -116,7 +217,7 @@ p {
 .contact-links a:hover {
     background: linear-gradient(45deg, #6c76ff, #59b5f7); /* Flipped gradient */
     transform: translateY(-2px);
-    color: #ffffff; /* Reaffirm text color */
+    color: var(--default-hover-color); /* Reaffirm text color */
 }
 
 .contact-links a:active {
