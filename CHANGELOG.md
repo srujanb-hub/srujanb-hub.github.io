@@ -31,3 +31,9 @@ _It can have version, date of change and relevant changes of that release versio
     - Reusable variable update
 - Hyper link stylesheet update
 - Section wise background property update
+
+## [0.6.0] - [07-Jan-2026]
+- Title caption update to accommodate styling in future.
+- Experience sort by functionality draft
+- Removal of dead code
+- Background color animation update

@@ -19,7 +19,9 @@
     <body>
         <h1>Hi I'm Srujan 👋</h1>
         <img src="./images/srujan_profile_pic.jpg" alt="Srujan Botlaguduru Profile Picture" width="200" height="200" style="border-radius: 50%;"/>
-        <p>A FORWARD THINKING <b>PRINCIPAL</b> / <b>SENIOR ENGINEER</b> WITH <b>10+</b> YEARS OF EXPERIENCE IN THE SOFTWARE ENGINEERING INDUSTRY.</p>
+        <title-caption id="title_caption" class="title-caption">
+            <p>A FORWARD THINKING <b>PRINCIPAL</b> / <b>SENIOR ENGINEER</b> WITH <b>10+</b> YEARS OF EXPERIENCE IN THE SOFTWARE ENGINEERING INDUSTRY.</p>
+        </title-caption>
         <about-section id="about" class="about-section">
             <h2>About Me</h2>
             <p>I'm a passionate software engineer / leader / learner with a knack for solving complex problems that companies face.</p>
@@ -31,6 +33,19 @@
         </about-section>
         <experience-section id="experience" class="experience-section">
             <h2>Experience</h2>
+            <!-- [TODO] Add sorting functionality for experience section. -->
+            <!-- <p>
+                <label for="experience">Sort by</label>
+                <input list="experienceOptions" id="experience" name="experience" value="Company"/>
+                <datalist id="experienceOptions" defaultValue="Company">
+                    <option tag="Role" value="Role"></option>
+                    <option tag="Company" value="Company"></option>
+                    <option tag="Duration" value="Duration"></option>
+                    <option tag="Location" value="Location"></option>
+                    <option tag="Technologies Used" value="Technologies Used"></option>
+                    <option tag="Responsibilities" value="Responsibilities"></option>
+                </datalist>
+            </p> -->
             <p>I've worked at several companies, including:</p>
             <h3>SanDisk - Role: Principal Engineer</h3>
             <p>Acquired solid architectural skills by redesigning four-layered storage validation platform and led the design of scalable storage solutions.</p>
@@ -58,15 +73,8 @@
             <p>CI/CD, Infrastructure as Code, Monitoring & Logging</p>
             <h3>Frameworks & Libraries:</h3>
             <p>Pytest, Unittest, Transformers (Hugging Face - Model Definition), Scikit-learn & Torch (Machine or Deep Learning), Qt Creator (Desktop Applications)</p>
-            <!-- <li>FastAPI (API Development)</li> -->
-            <!-- <li>Django</li> -->
-            <!-- <li>Flask</li> -->
-            <!-- <li>React.js</li> -->
-            <!-- <li>Node.js</li> -->
             <h3>Leadership & Methodologies:</h3>
             <p>Agile Methodologies, Cross-Team Design Reviews, Project Management, DevOps Practices, Team Leadership, Stakeholder Alignment, Technical Mentorship, </p>
-            <!-- <li>Kanban</li>
-            <li>Scrum</li> -->
             <h3>Proficiency in Tools & Platforms:</h3>
             <p>Version Control, Containerization, Orchestration, CI/CD Pipelines</p>
             <h3>Systems & Architecture:</h3>
@@ -81,11 +89,6 @@
             <p>Amadeus Pace Setter and Customer Catalyst awards for mentoring and driving customer success.</p>
             <p>Honeywell Star, Bronze, and Silver awards for delivering first-in class camera firmware.</p>
             <p>TCS Gems Appreciation award for timely project delivery.</p>
-            <!-- <h2>Certifications</h2>
-            <p>Google Cloud Professional Cloud Architect</p>
-            <p>Google Cloud Professional Data Engineer</p>
-            <p>Certified Kubernetes Administrator (CKA)</p>
-            <p>AWS Certified Solutions Architect – Associate</p> -->
         </awards-section>
         <resume-section id="resume_cv" class="resume-section">
             <h2>Resume</h2>

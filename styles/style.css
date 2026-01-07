@@ -3,6 +3,7 @@
     --default-hover-color: linear-gradient(135deg, #59b5f7, #6c76ff);
     --default-border-radius: clamp(1rem, 4vw, 2rem);    /* scales border radius 16px -> 32px */
     --default-hyperlink-color: #001fbd; /* dark blue */
+    --default-text-color: #001fbd;      /* dark blue */
     --default-hyperlink-hover-color: orange; /* brighter blue */
     --default-padding: clamp(0.5rem, 1.5vw, 1rem); /* scales padding 8px -> 16px */
     --section-primary-background: linear-gradient(135deg, #59b5f7, #6c76ff);
@@ -12,13 +13,35 @@
     --section-margin: clamp(2rem, 1vw, 1rem);  /* scales margin 32px -> 16px */
 }
 
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
 html {
     background-color: var(--default-color);
-    color: #001fbd;
+    color: var(--default-text-color);
     font-style: normal;
     font-family: 'Times New Roman', Times, serif;
     align-content: center;
     font-size: small;
+
+    background: linear-gradient(
+        135deg,
+        hsl(170deg, 80%, 70%),
+        hsl(190deg, 80%, 70%),
+        hsl(250deg, 80%, 70%),
+        hsl(320deg, 80%, 70%)
+    );
+    background-size: 270% 270%;
+    animation: gradientAnimation 15s ease infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-fill-mode: inherit;
 }
 
 /* Remove bullets and reset default spacing */
@@ -113,6 +136,14 @@ a:hover {
   transform: translateY(-1px);
 }
 
+/* .title-caption {
+    background: var(--section-primary-background);
+    padding: var(--default-padding);
+    border-radius: var(--default-border-radius);
+    color: var(--default-color);
+    min-width: var(--section-min-width);
+} */
+
 .about-section {
     background: var(--section-primary-background);
     padding: var(--section-padding);
@@ -129,6 +160,35 @@ a:hover {
     color: var(--default-color);
     margin: var(--section-margin);
     min-width: var(--section-min-width);
+}
+
+.experience-section input {
+    max-width: 15%;
+    padding: var(--default-padding);
+    border: 2px solid var(--default-color);
+    border-radius: var(--default-border-radius);
+    align-self: right;
+    align-items: right;
+    alignment-baseline: right;
+    align-content:right;
+    justify-content: right;
+}
+
+.experience-section datalist {
+    list-style-type: none;       /* 🔸 No dots */
+    margin: 0;
+    padding: 0;
+    align-self: right;
+    display: flex;
+    flex-wrap: wrap;             /* Optional: wraps on small screens */
+    gap: 10px;                   /* Space between items */
+}
+
+.experience-section datalist option {
+    flex-grow: 1;
+    /* Adjust the width of list item */
+    flex-basis: calc(2% - 10px); /* Adjust based on desired items per row */
+    min-width: 20px;             /* Prevent tiny squished buttons */
 }
 
 .projects-section {
@@ -205,7 +265,7 @@ a:hover {
     padding: clamp(0.5rem, 1.5vw, 1rem) clamp(0.75rem, 2vw, 1.25rem); /* scales padding */
     text-align: center;
     text-decoration: none;
-    color: #001fbd;
+    color: var(--default-text-color);
     background: linear-gradient(45deg, #59b5f7, #6c76ff);
     border: 2px solid var(--default-color);
     border-radius: clamp(0.75rem, 3vw, 1.5rem); /* 12px -> 24px */
