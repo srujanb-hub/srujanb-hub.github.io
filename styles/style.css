@@ -13,35 +13,13 @@
     --section-margin: clamp(2rem, 1vw, 1rem);  /* scales margin 32px -> 16px */
 }
 
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 0%;
-    }
-    100% {
-        background-position: 100% 100%;
-    }
-}
-
 html {
-    background-color: var(--default-color);
+    background-color: hsl(250deg, 80%, 70%);
     color: var(--default-text-color);
     font-style: normal;
     font-family: 'Times New Roman', Times, serif;
     align-content: center;
     font-size: small;
-
-    background: linear-gradient(
-        135deg,
-        hsl(170deg, 80%, 70%),
-        hsl(190deg, 80%, 70%),
-        hsl(250deg, 80%, 70%),
-        hsl(320deg, 80%, 70%)
-    );
-    background-size: 270% 270%;
-    animation: gradientAnimation 15s ease infinite;
-    animation-direction: alternate;
-    animation-play-state: running;
-    animation-fill-mode: inherit;
 }
 
 /* Remove bullets and reset default spacing */
@@ -68,7 +46,7 @@ menu li {
 menu li a {
     display: block;
     width: 90%;
-    padding: clamp(0.5rem, 1.5vw, 1rem) clamp(0.75rem, 2vw, 1.5rem); /* scales padding */
+    padding: var(--default-padding) clamp(0.75rem, 2vw, 1.5rem); /* scales padding */
     text-align: center;
     text-decoration: none;
     color: var(--default-color);
@@ -167,10 +145,6 @@ a:hover {
     padding: var(--default-padding);
     border: 2px solid var(--default-color);
     border-radius: var(--default-border-radius);
-    align-self: right;
-    align-items: right;
-    alignment-baseline: right;
-    align-content:right;
     justify-content: right;
 }
 
@@ -189,6 +163,29 @@ a:hover {
     /* Adjust the width of list item */
     flex-basis: calc(2% - 10px); /* Adjust based on desired items per row */
     min-width: 20px;             /* Prevent tiny squished buttons */
+}
+
+/* .category-filter {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    background: #f0f8ff;
+    border-radius: 8px;
+    display: inline-block;
+}*/
+
+.tech-tags {
+    margin-top: 0.5rem;
+}
+
+.tech-tag {
+    display: inline-block;
+    background: #e3f2fd;
+    color: #0d47a1;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.3rem;
 }
 
 .projects-section {
@@ -262,7 +259,7 @@ a:hover {
 .contact-links a {
     display: block;
     width: 80%;
-    padding: clamp(0.5rem, 1.5vw, 1rem) clamp(0.75rem, 2vw, 1.25rem); /* scales padding */
+    padding: var(--default-padding) clamp(0.75rem, 2vw, 1.25rem); /* scales padding */
     text-align: center;
     text-decoration: none;
     color: var(--default-text-color);

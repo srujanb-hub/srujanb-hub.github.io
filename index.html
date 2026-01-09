@@ -33,30 +33,66 @@
         </about-section>
         <experience-section id="experience" class="experience-section">
             <h2>Experience</h2>
-            <!-- [TODO] Add sorting functionality for experience section. -->
-            <!-- <p>
-                <label for="experience">Sort by</label>
-                <input list="experienceOptions" id="experience" name="experience" value="Company"/>
-                <datalist id="experienceOptions" defaultValue="Company">
-                    <option tag="Role" value="Role"></option>
-                    <option tag="Company" value="Company"></option>
-                    <option tag="Duration" value="Duration"></option>
-                    <option tag="Location" value="Location"></option>
-                    <option tag="Technologies Used" value="Technologies Used"></option>
-                    <option tag="Responsibilities" value="Responsibilities"></option>
-                </datalist>
-            </p> -->
-            <p>I've worked at several companies, including:</p>
-            <h3>SanDisk - Role: Principal Engineer</h3>
-            <p>Acquired solid architectural skills by redesigning four-layered storage validation platform and led the design of scalable storage solutions.</p>
-            <h3>Amadeus - Role: Software Development Engineer 3</h3>
-            <p>Contributed to cutting-edge travel technology by acting as a full stack engineer and mentoring new team members.</p>
-            <h3>Honeywell - Role: Senior Embedded/Software Engineer</h3>
-            <p>Enhanced camera & avionics data loader systems for industrial applications.</p>
-            <h3>TCS - Role: Software Engineer</h3>
-            <p>Delivered software solutions for diverse clients.</p>
-            <h3>MagnaQuest - Role: Software Engineer</h3>
-            <p>Developed software for security systems.</p>
+            <!-- Category Selector (NOT datalist) -->
+            <!-- <div class="category-filter">
+                <label for="category-select">Group by:</label>
+                <select id="category-select">
+                    <option value="all">All Experiences</option>
+                    <option value="company">Company</option>
+                    <option value="role">Role</option>
+                    <option value="tech">Technology</option>
+                </select>
+            </div> -->
+            <!-- Job Entries (structured data) -->
+            <div class="job" data-company="SanDisk" data-role="Principal Engineer" data-tech="Python,C++,Storage Systems,Domain Driven Design">
+                <h3>SanDisk - Principal Engineer</h3>
+                <p>Acquired solid architectural skills by redesigning four-layered storage validation platform and led the design of scalable storage solutions.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">Storage Systems</span>
+                    <span class="tech-tag">Domain Driven Design</span>
+                </div>
+            </div>
+            <div class="job" data-company="Amadeus" data-role="Software Development Engineer 3" data-tech="Python,C++,SQL,Travel Tech,Microservices">
+                <h3>Amadeus - Software Development Engineer 3</h3>
+                <p>Contributed to cutting-edge travel technology by acting as a full stack engineer and mentoring new team members.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">Travel Tech</span>
+                    <span class="tech-tag">Microservices</span>
+                </div>
+            </div>
+            <div class="job" data-company="Honeywell" data-role="Senior Embedded Engineer" data-tech="C++,C,Sqlite,Avionics Systems,Camera Systems">
+                <h3>Honeywell - Senior Embedded Engineer</h3>
+                <p>Enhanced camera & avionics data loader systems for industrial applications.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">C</span>
+                    <span class="tech-tag">Sqlite</span>
+                    <span class="tech-tag">Avionics Systems</span>
+                    <span class="tech-tag">Camera Systems</span>
+                </div>
+            </div>
+            <div class="job" data-company="TCS" data-role="Software Engineer" data-tech="C++,Git,Telecom Systems">
+                <h3>TCS - Software Engineer</h3>
+                <p>Delivered software solutions for diverse clients.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">Git</span>
+                    <span class="tech-tag">Telecom Systems</span>
+                </div>
+            </div>
+            <div class="job" data-company="MagnaQuest" data-role="Software Engineer" data-tech="C++,Security Systems">
+                <h3>MagnaQuest - Software Engineer</h3>
+                <p>Developed software for security systems.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">Security Systems</span>
+                </div>
+            </div>
         </experience-section>
         <projects-section id="projects" class="projects-section">
             <h2>Projects</h2>
@@ -68,17 +104,53 @@
         <skills-section id="skills" class="skills-section">
             <h2>Skills</h2>
             <h3>Core Languages:</h3>
-            <p>Python, C/C++, HTML, SQL & NoSQL</p>
+            <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">C/C++</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">NoSQL</span>
+            </div>
             <h3>DevOps:</h3>
-            <p>CI/CD, Infrastructure as Code, Monitoring & Logging</p>
+            <div class="tech-tags">
+                <span class="tech-tag">CI/CD</span>
+                <span class="tech-tag">Infrastructure as Code</span>
+                <span class="tech-tag">Monitoring & Logging</span>
+            </div>
             <h3>Frameworks & Libraries:</h3>
-            <p>Pytest, Unittest, Transformers (Hugging Face - Model Definition), Scikit-learn & Torch (Machine or Deep Learning), Qt Creator (Desktop Applications)</p>
+            <div class="tech-tags">
+                <span class="tech-tag">Pytest</span>
+                <span class="tech-tag">Unittest</span>
+                <span class="tech-tag">Transformers (Hugging Face - Model Definition)</span>
+                <span class="tech-tag">Scikit-learn & Torch (Machine or Deep Learning)</span>
+                <span class="tech-tag">Qt Creator (Desktop Applications)</span>
+            </div>
             <h3>Leadership & Methodologies:</h3>
-            <p>Agile Methodologies, Cross-Team Design Reviews, Project Management, DevOps Practices, Team Leadership, Stakeholder Alignment, Technical Mentorship, </p>
+            <div class="tech-tags">
+                <span class="tech-tag">Agile Methodologies</span>
+                <span class="tech-tag">Cross-Team Design Reviews</span>
+                <span class="tech-tag">Project Management</span>
+                <span class="tech-tag">DevOps Practices</span>
+                <span class="tech-tag">Team Leadership</span>
+                <span class="tech-tag">Stakeholder Alignment</span>
+                <span class="tech-tag">Technical Mentorship</span>
+            </div>
             <h3>Proficiency in Tools & Platforms:</h3>
-            <p>Version Control, Containerization, Orchestration, CI/CD Pipelines</p>
+            <div class="tech-tags">
+                <span class="tech-tag">Version Control</span>
+                <span class="tech-tag">Containerization</span>
+                <span class="tech-tag">Orchestration</span>
+                <span class="tech-tag">CI/CD Pipelines</span>
+            </div>
             <h3>Systems & Architecture:</h3>
-            <p>Distributed Systems, Domain Driven Design, Cloud Computing (GCP, Azure), Containerization (Kubernetes), Microservices Architecture, System Design</p>
+            <div class="tech-tags">
+                <span class="tech-tag">Distributed Systems</span>
+                <span class="tech-tag">Domain Driven Design</span>
+                <span class="tech-tag">Cloud Computing (GCP, Azure)</span>
+                <span class="tech-tag">Containerization (Kubernetes)</span>
+                <span class="tech-tag">Microservices Architecture</span>
+                <span class="tech-tag">System Design</span>
+            </div>
         </skills-section>
         <education-section id="education" class="education-section">
             <h2>Education</h2>
@@ -87,7 +159,7 @@
         <awards-section id="awards_certifications" class="awards-section">
             <h2>Awards & Recognitions</h2>
             <p>Amadeus Pace Setter and Customer Catalyst awards for mentoring and driving customer success.</p>
-            <p>Honeywell Star, Bronze, and Silver awards for delivering first-in class camera firmware.</p>
+            <p>Honeywell Star, Bronze, and Silver awards for debugging, problem solving, and delivering product(s).</p>
             <p>TCS Gems Appreciation award for timely project delivery.</p>
         </awards-section>
         <resume-section id="resume_cv" class="resume-section">

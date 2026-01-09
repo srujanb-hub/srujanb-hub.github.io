@@ -37,3 +37,8 @@ _It can have version, date of change and relevant changes of that release versio
 - Experience sort by functionality draft
 - Removal of dead code
 - Background color animation update
+
+## [0.7.0] - [09-Jan-2026]
+- Experience tech stack tag update
+- Redundant code removal
+- Background color update
