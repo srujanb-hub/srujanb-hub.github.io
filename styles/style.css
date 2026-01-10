@@ -14,7 +14,7 @@
 }
 
 html {
-    background-color: hsl(250deg, 80%, 70%);
+    background-color: var(--default-color);
     color: var(--default-text-color);
     font-style: normal;
     font-family: 'Times New Roman', Times, serif;
@@ -91,27 +91,53 @@ h1 {
     font-size: clamp(1.5rem, 4vw, 3.75rem); /* Responsive font size - 24px to 60px */
     text-align: center;
     text-shadow: 2px 2px 2px black;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+h1:hover {
+    transform: translateY(-1px);
+}
+
+h2 {
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+h2:hover {
+    transform: translateY(-1px);
+}
+
+h3 {
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+h3:hover {
+    transform: translateY(-1px);
 }
 
 p {
     font-size: clamp(1rem, 2.5vw, 1.25rem); /* Responsive font size - 16px to 20px */
     text-align: center;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+p:hover {
+    transform: translateY(-1px);
 }
 
 a {
-  color: var(--default-hyperlink-color, #007bff);
-  text-decoration: none;
-  border-radius: var(--default-border-radius, 4px);
-  padding: 0.2em 0.3em;
-  transition: transform 0.2s ease, background 0.3s ease;
-  display: inline-block;
+    color: var(--default-hyperlink-color, #007bff);
+    text-decoration: none;
+    border-radius: var(--default-border-radius, 4px);
+    padding: 0.2em 0.3em;
+    transition: transform 0.2s ease, background 0.3s ease;
+    display: inline-block;
 }
 
 a:hover {
-  color: var(--default-hyperlink-hover-color, #0056b3);
-  background-color: var(--default-hyperlink-highlight, rgba(154, 205, 50, 0.3));
-  text-decoration: none;
-  transform: translateY(-1px);
+    color: var(--default-hyperlink-hover-color, #0056b3);
+    background-color: var(--default-hyperlink-highlight, rgba(154, 205, 50, 0.3));
+    text-decoration: none;
+    transform: translateY(-1px);
 }
 
 /* .title-caption {
@@ -186,6 +212,11 @@ a:hover {
     font-size: 0.85rem;
     margin-right: 0.5rem;
     margin-bottom: 0.3rem;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.tech-tag:hover {
+    transform: translateY(-1px);
 }
 
 .projects-section {

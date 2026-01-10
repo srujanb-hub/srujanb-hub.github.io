@@ -42,3 +42,7 @@ _It can have version, date of change and relevant changes of that release versio
 - Experience tech stack tag update
 - Redundant code removal
 - Background color update
+
+## [0.7.1] - [10-Jan-2026]
+- Defaulted background color
+- Hover styling update
