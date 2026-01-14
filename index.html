@@ -1,4 +1,5 @@
 <!doctype html>
+<meta charset="utf-8"/>
 <html lang="en-UK">
     <menu>
         <li><a href="#about">About</a></li>
@@ -11,7 +12,6 @@
         <li><a href="#contact">Contact</a></li>
     </menu>
     <head>
-        <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>Srujan Portfolio</title>
         <link href="styles/style.css" rel="stylesheet"/>
@@ -103,54 +103,78 @@
         </projects-section>
         <skills-section id="skills" class="skills-section">
             <h2>Skills</h2>
-            <h3>Core Languages:</h3>
-            <div class="tech-tags">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">C/C++</span>
-                <span class="tech-tag">HTML</span>
-                <span class="tech-tag">SQL</span>
-                <span class="tech-tag">NoSQL</span>
-            </div>
-            <h3>DevOps:</h3>
-            <div class="tech-tags">
-                <span class="tech-tag">CI/CD</span>
-                <span class="tech-tag">Infrastructure as Code</span>
-                <span class="tech-tag">Monitoring & Logging</span>
-            </div>
-            <h3>Frameworks & Libraries:</h3>
-            <div class="tech-tags">
-                <span class="tech-tag">Pytest</span>
-                <span class="tech-tag">Unittest</span>
-                <span class="tech-tag">Transformers (Hugging Face - Model Definition)</span>
-                <span class="tech-tag">Scikit-learn & Torch (Machine or Deep Learning)</span>
-                <span class="tech-tag">Qt Creator (Desktop Applications)</span>
-            </div>
-            <h3>Leadership & Methodologies:</h3>
-            <div class="tech-tags">
-                <span class="tech-tag">Agile Methodologies</span>
-                <span class="tech-tag">Cross-Team Design Reviews</span>
-                <span class="tech-tag">Project Management</span>
-                <span class="tech-tag">DevOps Practices</span>
-                <span class="tech-tag">Team Leadership</span>
-                <span class="tech-tag">Stakeholder Alignment</span>
-                <span class="tech-tag">Technical Mentorship</span>
-            </div>
-            <h3>Proficiency in Tools & Platforms:</h3>
-            <div class="tech-tags">
-                <span class="tech-tag">Version Control</span>
-                <span class="tech-tag">Containerization</span>
-                <span class="tech-tag">Orchestration</span>
-                <span class="tech-tag">CI/CD Pipelines</span>
-            </div>
-            <h3>Systems & Architecture:</h3>
-            <div class="tech-tags">
-                <span class="tech-tag">Distributed Systems</span>
-                <span class="tech-tag">Domain Driven Design</span>
-                <span class="tech-tag">Cloud Computing (GCP, Azure)</span>
-                <span class="tech-tag">Containerization (Kubernetes)</span>
-                <span class="tech-tag">Microservices Architecture</span>
-                <span class="tech-tag">System Design</span>
-            </div>
+            <core-lang-skills id="core-lang" class="core-lang-skills">
+                <h3>Core Languages:</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">C/C++</span>
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">NoSQL</span>
+                </div>
+                <p><span class="tech-tag">Python</span> I used Python in two of my previous projects. Primarily, I used it for data conversion and storage test framework development.</p>
+                <p><span class="tech-tag">C++/C</span> I used C in one and C++ in four of my previous projects. I primarily used these languages for front-end and back-end development.</p>
+                <p><span class="tech-tag">HTML</span> I have basic knowledge on HTML and I used HTML to build my personal portfolio.</p>
+                <p><span class="tech-tag">SQL</span> I used SQL in four of my previous projects and I used it for back-end development, enhancement, and validation.</p>
+                <p><span class="tech-tag">NoSQL</span> I used NoSQL in two of my previous projects and I used it for back-end system scalability.</p>
+            </core-lang-skills>
+            <devops-skills id="devops" class="devops-skills">
+                <h3>DevOps:</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">CI/CD</span>
+                    <span class="tech-tag">Infrastructure as Code</span>
+                    <span class="tech-tag">Monitoring & Logging</span>
+                </div>
+                <p><span class="tech-tag">CI/CD</span> I used CI/CD in two of my previous projects and I configured the infrastructure code scanning tools.</p>
+            </devops-skills>
+            <framelib-skills id="framelib" class="framelib-skills">
+                <h3>Frameworks & Libraries:</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">Pytest</span>
+                    <span class="tech-tag">Unittest</span>
+                    <span class="tech-tag">Transformers (Hugging Face - Model Definition)</span>
+                    <span class="tech-tag">Scikit-learn & Torch (Machine or Deep Learning)</span>
+                    <span class="tech-tag">Qt Creator (Desktop Applications)</span>
+                </div>
+                <p><span class="tech-tag">Pytest</span> I used pytest in two of my previous projects to validate the API-level functionality.</p>
+                <p><span class="tech-tag">Unittest</span> I used unittest in one of my previous projects to enhance storage test framework.</p>
+                <p><span class="tech-tag">Transformers</span> I used Transformers in my custom project to demonstrate Generative AI.</p>
+                <p><span class="tech-tag">Scikit-learn</span> I used Scikit-learn in my custom project to demonstrate classification, kmeans, and linear regression.</p>
+                <p><span class="tech-tag">Torch</span> I used Torch in my custom project to demonstrate xor network training and Gen AI.</p>
+                <p><span class="tech-tag">Qt Creator</span> I used Qt in three of my previous and current projects to develop and enhance desktop/tablet applications.</p>
+            </framelib-skills>
+            <leadermeth-skills id="leadermeth" class="leadermeth-skills">
+                <h3>Leadership & Methodologies:</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">Agile Methodologies</span>
+                    <span class="tech-tag">Cross-Team Design Reviews</span>
+                    <span class="tech-tag">Project Management</span>
+                    <span class="tech-tag">DevOps Practices</span>
+                    <span class="tech-tag">Team Leadership</span>
+                    <span class="tech-tag">Stakeholder Alignment</span>
+                    <span class="tech-tag">Technical Mentorship</span>
+                </div>
+            </leadermeth-skills>
+            <tool-skills id="tool" class="tool-skills">
+                <h3>Proficiency in Tools & Platforms:</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">Version Control</span>
+                    <span class="tech-tag">Containerization</span>
+                    <span class="tech-tag">Orchestration</span>
+                    <span class="tech-tag">CI/CD Pipelines</span>
+                </div>
+            </tool-skills>
+            <sysarch-skills id="sysarch" class="sysarch-skills">
+                <h3>Systems & Architecture:</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">Distributed Systems</span>
+                    <span class="tech-tag">Domain Driven Design</span>
+                    <span class="tech-tag">Cloud Computing (GCP, Azure)</span>
+                    <span class="tech-tag">Containerization (Kubernetes)</span>
+                    <span class="tech-tag">Microservices Architecture</span>
+                    <span class="tech-tag">System Design</span>
+                </div>
+            </sysarch-skills>
         </skills-section>
         <education-section id="education" class="education-section">
             <h2>Education</h2>

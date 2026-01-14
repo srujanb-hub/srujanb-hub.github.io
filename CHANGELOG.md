@@ -46,3 +46,9 @@ _It can have version, date of change and relevant changes of that release versio
 ## [0.7.1] - [10-Jan-2026]
 - Defaulted background color
 - Hover styling update
+
+## [0.8.0] - [14-Jan-2026]
+- Debug level warning(s) fix
+- Skill
+    - margin update
+    - skill description update

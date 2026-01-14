@@ -178,7 +178,6 @@ a:hover {
     list-style-type: none;       /* 🔸 No dots */
     margin: 0;
     padding: 0;
-    align-self: right;
     display: flex;
     flex-wrap: wrap;             /* Optional: wraps on small screens */
     gap: 10px;                   /* Space between items */
@@ -235,6 +234,30 @@ a:hover {
     color: var(--default-color);
     margin: var(--section-margin);
     min-width: var(--section-min-width);
+}
+
+.core-lang-skills {
+    margin: var(--section-margin);
+}
+
+.devops-skills {
+    margin: var(--section-margin);
+}
+
+.framelib-skills {
+    margin: var(--section-margin);
+}
+
+.leadermeth-skills {
+    margin: var(--section-margin);
+}
+
+.tool-skills {
+    margin: var(--section-margin);
+}
+
+.sysarch-skills {
+    margin: var(--section-margin);
 }
 
 .education-section {
