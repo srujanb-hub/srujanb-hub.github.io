@@ -52,3 +52,10 @@ _It can have version, date of change and relevant changes of that release versio
 - Skill
     - margin update
     - skill description update
+
+## [0.8.1] - [15-Jan-2026]
+- Presentation update under experience section
+- Skill section description update
+    - Existing information update
+    - Leadership & tool skill update
+    - Contact me update
