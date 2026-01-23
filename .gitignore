@@ -1,0 +1,2 @@
+# Ignore development configuration files.
+*.vscode*
