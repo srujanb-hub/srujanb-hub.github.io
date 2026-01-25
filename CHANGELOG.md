@@ -65,3 +65,9 @@ _It can have version, date of change and relevant changes of that release versio
     - Refactored the basic details.
     - Systems & architecture update.
 - Introduction of .gitignore file to ignore file(s) in code management.
+
+## [0.9.1] - [25-Jan-2026]
+- Skill refactoring update.
+- Contact information update.
+- Section hover & relevant style update.
+- Resume update.

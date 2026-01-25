@@ -11,6 +11,7 @@
     --section-padding: clamp(1rem, 2vw, 1.5rem); /* scales padding 16px -> 24px */
     --section-min-width: 30%;                     /* minimum width for sections */
     --section-margin: clamp(2rem, 1vw, 1rem);  /* scales margin 32px -> 16px */
+    --section-text-color: linear-gradient(135deg, #001fbd, #0056b3); /* darker blue gradient */
 }
 
 html {
@@ -152,18 +153,30 @@ a:hover {
     background: var(--section-primary-background);
     padding: var(--section-padding);
     border-radius: var(--default-border-radius);
-    color: var(--default-color);
+    color: var(--section-text-color);
     margin: var(--section-margin);
     min-width: var(--section-min-width);
+}
+
+.about-section:hover{
+    transform: translateY(-2px);
+    color: var(--default-color); /* Reaffirm text color */
+    box-shadow: #001fbd 0px 4px 15px;
 }
 
 .experience-section {
     background: var(--section-secondary-background);
     padding: var(--section-padding);
     border-radius: var(--default-border-radius);
-    color: var(--default-color);
+    color: var(--section-text-color);
     margin: var(--section-margin);
     min-width: var(--section-min-width);
+}
+
+.experience-section:hover{
+    transform: translateY(-2px);
+    color: var(--default-color); /* Reaffirm text color */
+    box-shadow: #001fbd 0px 4px 15px;
 }
 
 .experience-section input {
@@ -222,18 +235,30 @@ a:hover {
     background: var(--section-primary-background);
     padding: var(--section-padding);
     border-radius: var(--default-border-radius);
-    color: var(--default-color);
+    color: var(--section-text-color);
     margin: var(--section-margin);
     min-width: var(--section-min-width);
+}
+
+.projects-section:hover{
+    transform: translateY(-2px);
+    color: var(--default-color); /* Reaffirm text color */
+    box-shadow: #001fbd 0px 4px 15px;
 }
 
 .skills-section {
     background: var(--section-secondary-background);
     padding: var(--section-padding);
     border-radius: var(--default-border-radius);
-    color: var(--default-color);
+    color: var(--section-default-color); /* Reaffirm text color */
     margin: var(--section-margin);
     min-width: var(--section-min-width);
+}
+
+.skills-section:hover{
+    transform: translateY(-2px);
+    color: var(--default-color); /* Reaffirm text color */
+    box-shadow: #001fbd 0px 4px 15px;
 }
 
 .core-lang-skills {
@@ -264,36 +289,60 @@ a:hover {
     background: var(--section-primary-background);
     padding: var(--section-padding);
     border-radius: var(--default-border-radius);
-    color: var(--default-color);
+    color: var(--section-text-color);
     margin: var(--section-margin);
     min-width: var(--section-min-width);
+}
+
+.education-section:hover{
+    transform: translateY(-2px);
+    color: var(--default-color); /* Reaffirm text color */
+    box-shadow: #001fbd 0px 4px 15px;
 }
 
 .awards-section {
     background: var(--section-secondary-background);
     padding: var(--section-padding);
     border-radius: var(--default-border-radius);
-    color: var(--default-color);
+    color: var(--section-text-color);
     margin: var(--section-margin);
     min-width: var(--section-min-width);
+}
+
+.awards-section:hover{
+    transform: translateY(-2px);
+    color: var(--default-color); /* Reaffirm text color */
+    box-shadow: #001fbd 0px 4px 15px;
 }
 
 .resume-section {
     background: var(--section-primary-background);
     padding: var(--section-padding);
     border-radius: var(--default-border-radius);
-    color: var(--default-color);
+    color: var(--section-text-color);
     margin: var(--section-margin);
     min-width: var(--section-min-width);
+}
+
+.resume-section:hover{
+    transform: translateY(-2px);
+    color: var(--default-color); /* Reaffirm text color */
+    box-shadow: #001fbd 0px 4px 15px;
 }
 
 .contact-section {
     background: var(--section-secondary-background);
     padding: var(--section-padding);
     border-radius: var(--default-border-radius);
-    color: var(--default-color);
+    color: var(--section-text-color);
     margin: var(--section-margin);
     min-width: var(--section-min-width);
+}
+
+.contact-section:hover{
+    transform: translateY(-2px);
+    color: var(--default-color); /* Reaffirm text color */
+    box-shadow: #001fbd 0px 4px 15px;
 }
 
 .contact-links {
