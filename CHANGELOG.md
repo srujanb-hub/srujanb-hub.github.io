@@ -71,3 +71,6 @@ _It can have version, date of change and relevant changes of that release versio
 - Contact information update.
 - Section hover & relevant style update.
 - Resume update.
+
+## [0.9.2] - [26-Jan-2026]
+- Box and text shadow update.

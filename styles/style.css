@@ -2,10 +2,12 @@
     --default-color: #ffffff;   /* white */
     --default-hover-color: linear-gradient(135deg, #59b5f7, #6c76ff);
     --default-border-radius: clamp(1rem, 4vw, 2rem);    /* scales border radius 16px -> 32px */
+    --default-lite-border-radius: clamp(0.5rem, 2vw, 1rem);    /* scales border radius 16px -> 32px */
     --default-hyperlink-color: #001fbd; /* dark blue */
     --default-text-color: #001fbd;      /* dark blue */
-    --default-hyperlink-hover-color: orange; /* brighter blue */
+    --default-hyperlink-hover-color: orange;
     --default-padding: clamp(0.5rem, 1.5vw, 1rem); /* scales padding 8px -> 16px */
+    --default-box-shadow: #001fbd 0px 4px 15px;
     --section-primary-background: linear-gradient(135deg, #59b5f7, #6c76ff);
     --section-secondary-background: linear-gradient(135deg, #6c76ff, #59b5f7);
     --section-padding: clamp(1rem, 2vw, 1.5rem); /* scales padding 16px -> 24px */
@@ -63,6 +65,7 @@ menu li a:hover {
     background: linear-gradient(45deg, #6c76ff, #59b5f7); /* Flipped gradient */
     transform: translateY(-2px);
     color: var(--default-hover-color); /* Reaffirm text color */
+    box-shadow: var(--default-box-shadow);
 }
 
 /* Optional: active/clicked state */
@@ -97,6 +100,8 @@ h1 {
 
 h1:hover {
     transform: translateY(-1px);
+    box-shadow: var(--default-box-shadow);
+    border-radius: var(--default-lite-border-radius);
 }
 
 h2 {
@@ -105,6 +110,7 @@ h2 {
 
 h2:hover {
     transform: translateY(-1px);
+    text-shadow: var(--default-box-shadow);
 }
 
 h3 {
@@ -113,6 +119,7 @@ h3 {
 
 h3:hover {
     transform: translateY(-1px);
+    text-shadow: var(--default-box-shadow);
 }
 
 p {
@@ -123,6 +130,7 @@ p {
 
 p:hover {
     transform: translateY(-1px);
+    text-shadow: var(--default-box-shadow);
 }
 
 a {
@@ -132,13 +140,17 @@ a {
     padding: 0.2em 0.3em;
     transition: transform 0.2s ease, background 0.3s ease;
     display: inline-block;
+    text-shadow: var(--default-box-shadow);
 }
+
+/* #0056b3 */
 
 a:hover {
     color: var(--default-hyperlink-hover-color, #0056b3);
     background-color: var(--default-hyperlink-highlight, rgba(154, 205, 50, 0.3));
     text-decoration: none;
     transform: translateY(-1px);
+    text-shadow: var(--default-box-shadow);
 }
 
 /* .title-caption {
@@ -161,7 +173,7 @@ a:hover {
 .about-section:hover{
     transform: translateY(-2px);
     color: var(--default-color); /* Reaffirm text color */
-    box-shadow: #001fbd 0px 4px 15px;
+    box-shadow: var(--default-box-shadow);
 }
 
 .experience-section {
@@ -176,7 +188,7 @@ a:hover {
 .experience-section:hover{
     transform: translateY(-2px);
     color: var(--default-color); /* Reaffirm text color */
-    box-shadow: #001fbd 0px 4px 15px;
+    box-shadow: var(--default-box-shadow);
 }
 
 .experience-section input {
@@ -229,6 +241,7 @@ a:hover {
 
 .tech-tag:hover {
     transform: translateY(-1px);
+    box-shadow: var(--default-box-shadow);
 }
 
 .projects-section {
@@ -243,7 +256,7 @@ a:hover {
 .projects-section:hover{
     transform: translateY(-2px);
     color: var(--default-color); /* Reaffirm text color */
-    box-shadow: #001fbd 0px 4px 15px;
+    box-shadow: var(--default-box-shadow);
 }
 
 .skills-section {
@@ -258,7 +271,7 @@ a:hover {
 .skills-section:hover{
     transform: translateY(-2px);
     color: var(--default-color); /* Reaffirm text color */
-    box-shadow: #001fbd 0px 4px 15px;
+    box-shadow: var(--default-box-shadow);
 }
 
 .core-lang-skills {
@@ -297,7 +310,7 @@ a:hover {
 .education-section:hover{
     transform: translateY(-2px);
     color: var(--default-color); /* Reaffirm text color */
-    box-shadow: #001fbd 0px 4px 15px;
+    box-shadow: var(--default-box-shadow);
 }
 
 .awards-section {
@@ -312,7 +325,7 @@ a:hover {
 .awards-section:hover{
     transform: translateY(-2px);
     color: var(--default-color); /* Reaffirm text color */
-    box-shadow: #001fbd 0px 4px 15px;
+    box-shadow: var(--default-box-shadow);
 }
 
 .resume-section {
@@ -327,7 +340,7 @@ a:hover {
 .resume-section:hover{
     transform: translateY(-2px);
     color: var(--default-color); /* Reaffirm text color */
-    box-shadow: #001fbd 0px 4px 15px;
+    box-shadow: var(--default-box-shadow);
 }
 
 .contact-section {
@@ -342,7 +355,7 @@ a:hover {
 .contact-section:hover{
     transform: translateY(-2px);
     color: var(--default-color); /* Reaffirm text color */
-    box-shadow: #001fbd 0px 4px 15px;
+    box-shadow: var(--default-box-shadow);
 }
 
 .contact-links {
@@ -378,6 +391,8 @@ a:hover {
     background: linear-gradient(45deg, #6c76ff, #59b5f7); /* Flipped gradient */
     transform: translateY(-2px);
     color: var(--default-hover-color); /* Reaffirm text color */
+    box-shadow: var(--default-box-shadow);
+    text-shadow: var(--default-box-shadow);
 }
 
 .contact-links a:active {
