@@ -3,11 +3,13 @@
     --default-hover-color: linear-gradient(135deg, #59b5f7, #6c76ff);
     --default-border-radius: clamp(1rem, 4vw, 2rem);    /* scales border radius 16px -> 32px */
     --default-lite-border-radius: clamp(0.5rem, 2vw, 1rem);    /* scales border radius 16px -> 32px */
-    --default-hyperlink-color: #001fbd; /* dark blue */
     --default-text-color: #001fbd;      /* dark blue */
-    --default-hyperlink-hover-color: orange;
+    --default-hyperlink-color: #001fbd; /* dark blue */
+    --default-hyperlink-hover-color: #ffffff; /* white */
+    --default-hyperlink-hover-background: #0056b3; /* medium blue */
+    --default-hyperlink-shadow: #ffffff 0px 4px 15px;
     --default-padding: clamp(0.5rem, 1.5vw, 1rem); /* scales padding 8px -> 16px */
-    --default-box-shadow: #001fbd 0px 4px 15px;
+    --default-shadow: #001fbd 0px 4px 15px;
     --section-primary-background: linear-gradient(135deg, #59b5f7, #6c76ff);
     --section-secondary-background: linear-gradient(135deg, #6c76ff, #59b5f7);
     --section-padding: clamp(1rem, 2vw, 1.5rem); /* scales padding 16px -> 24px */
@@ -54,7 +56,6 @@ menu li a {
     text-decoration: none;
     color: var(--default-color);
     background: linear-gradient(45deg, #59b5f7, #6c76ff);
-    border: 2px solid var(--default-color);
     border-radius: var(--default-border-radius);
     cursor: pointer;
     transition: transform 0.2s ease, background 0.3s ease;
@@ -65,7 +66,7 @@ menu li a:hover {
     background: linear-gradient(45deg, #6c76ff, #59b5f7); /* Flipped gradient */
     transform: translateY(-2px);
     color: var(--default-hover-color); /* Reaffirm text color */
-    box-shadow: var(--default-box-shadow);
+    box-shadow: var(--default-shadow);
 }
 
 /* Optional: active/clicked state */
@@ -100,8 +101,6 @@ h1 {
 
 h1:hover {
     transform: translateY(-1px);
-    box-shadow: var(--default-box-shadow);
-    border-radius: var(--default-lite-border-radius);
 }
 
 h2 {
@@ -110,7 +109,7 @@ h2 {
 
 h2:hover {
     transform: translateY(-1px);
-    text-shadow: var(--default-box-shadow);
+    text-shadow: var(--default-shadow);
 }
 
 h3 {
@@ -119,7 +118,7 @@ h3 {
 
 h3:hover {
     transform: translateY(-1px);
-    text-shadow: var(--default-box-shadow);
+    text-shadow: var(--default-shadow);
 }
 
 p {
@@ -130,7 +129,7 @@ p {
 
 p:hover {
     transform: translateY(-1px);
-    text-shadow: var(--default-box-shadow);
+    text-shadow: var(--default-shadow);
 }
 
 a {
@@ -140,17 +139,18 @@ a {
     padding: 0.2em 0.3em;
     transition: transform 0.2s ease, background 0.3s ease;
     display: inline-block;
-    text-shadow: var(--default-box-shadow);
+    text-shadow: var(--default-shadow);
 }
 
 /* #0056b3 */
 
 a:hover {
     color: var(--default-hyperlink-hover-color, #0056b3);
-    background-color: var(--default-hyperlink-highlight, rgba(154, 205, 50, 0.3));
+    background-color: var(--default-hyperlink-hover-background, rgba(154, 205, 50, 0.3));
     text-decoration: none;
     transform: translateY(-1px);
-    text-shadow: var(--default-box-shadow);
+    text-shadow: var(--default-shadow);
+    box-shadow: var(--default-hyperlink-shadow);
 }
 
 /* .title-caption {
@@ -173,7 +173,7 @@ a:hover {
 .about-section:hover{
     transform: translateY(-2px);
     color: var(--default-color); /* Reaffirm text color */
-    box-shadow: var(--default-box-shadow);
+    box-shadow: var(--default-shadow);
 }
 
 .experience-section {
@@ -188,7 +188,7 @@ a:hover {
 .experience-section:hover{
     transform: translateY(-2px);
     color: var(--default-color); /* Reaffirm text color */
-    box-shadow: var(--default-box-shadow);
+    box-shadow: var(--default-shadow);
 }
 
 .experience-section input {
@@ -241,7 +241,7 @@ a:hover {
 
 .tech-tag:hover {
     transform: translateY(-1px);
-    box-shadow: var(--default-box-shadow);
+    box-shadow: var(--default-shadow);
 }
 
 .projects-section {
@@ -256,7 +256,7 @@ a:hover {
 .projects-section:hover{
     transform: translateY(-2px);
     color: var(--default-color); /* Reaffirm text color */
-    box-shadow: var(--default-box-shadow);
+    box-shadow: var(--default-shadow);
 }
 
 .skills-section {
@@ -271,7 +271,7 @@ a:hover {
 .skills-section:hover{
     transform: translateY(-2px);
     color: var(--default-color); /* Reaffirm text color */
-    box-shadow: var(--default-box-shadow);
+    box-shadow: var(--default-shadow);
 }
 
 .core-lang-skills {
@@ -310,7 +310,7 @@ a:hover {
 .education-section:hover{
     transform: translateY(-2px);
     color: var(--default-color); /* Reaffirm text color */
-    box-shadow: var(--default-box-shadow);
+    box-shadow: var(--default-shadow);
 }
 
 .awards-section {
@@ -325,7 +325,7 @@ a:hover {
 .awards-section:hover{
     transform: translateY(-2px);
     color: var(--default-color); /* Reaffirm text color */
-    box-shadow: var(--default-box-shadow);
+    box-shadow: var(--default-shadow);
 }
 
 .resume-section {
@@ -340,7 +340,7 @@ a:hover {
 .resume-section:hover{
     transform: translateY(-2px);
     color: var(--default-color); /* Reaffirm text color */
-    box-shadow: var(--default-box-shadow);
+    box-shadow: var(--default-shadow);
 }
 
 .contact-section {
@@ -355,7 +355,7 @@ a:hover {
 .contact-section:hover{
     transform: translateY(-2px);
     color: var(--default-color); /* Reaffirm text color */
-    box-shadow: var(--default-box-shadow);
+    box-shadow: var(--default-shadow);
 }
 
 .contact-links {
@@ -380,7 +380,7 @@ a:hover {
     text-decoration: none;
     color: var(--default-text-color);
     background: linear-gradient(45deg, #59b5f7, #6c76ff);
-    border: 2px solid var(--default-color);
+    border: 1.5px solid var(--default-color);
     border-radius: clamp(0.75rem, 3vw, 1.5rem); /* 12px -> 24px */
     cursor: pointer;
     transition: transform 0.2s ease, background 0.3s ease;
@@ -391,8 +391,8 @@ a:hover {
     background: linear-gradient(45deg, #6c76ff, #59b5f7); /* Flipped gradient */
     transform: translateY(-2px);
     color: var(--default-hover-color); /* Reaffirm text color */
-    box-shadow: var(--default-box-shadow);
-    text-shadow: var(--default-box-shadow);
+    box-shadow: var(--default-hyperlink-shadow);
+    text-shadow: var(--default-shadow);
 }
 
 .contact-links a:active {

@@ -74,3 +74,6 @@ _It can have version, date of change and relevant changes of that release versio
 
 ## [0.9.2] - [26-Jan-2026]
 - Box and text shadow update.
+
+## [0.9.3] - [27-Jan-2026]
+- White shadow update.
