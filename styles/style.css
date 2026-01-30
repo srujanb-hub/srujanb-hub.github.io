@@ -10,6 +10,7 @@
     --default-hyperlink-shadow: #ffffff 0px 4px 15px;
     --default-padding: clamp(0.5rem, 1.5vw, 1rem); /* scales padding 8px -> 16px */
     --default-shadow: #001fbd 0px 4px 15px;
+    --default-bold-shadow: #001fbd 2px 6px 17px;
     --section-primary-background: linear-gradient(135deg, #59b5f7, #6c76ff);
     --section-secondary-background: linear-gradient(135deg, #6c76ff, #59b5f7);
     --section-padding: clamp(1rem, 2vw, 1.5rem); /* scales padding 16px -> 24px */
@@ -130,6 +131,10 @@ p {
 p:hover {
     transform: translateY(-1px);
     text-shadow: var(--default-shadow);
+}
+
+b {
+    text-shadow: var(--default-bold-shadow);
 }
 
 a {

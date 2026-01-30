@@ -77,3 +77,7 @@ _It can have version, date of change and relevant changes of that release versio
 
 ## [0.9.3] - [27-Jan-2026]
 - White shadow update.
+
+## [0.9.4] - [30-Jan-2026]
+- Title, about and skill description update.
+- Bold shadow update
