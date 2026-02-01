@@ -81,3 +81,11 @@ _It can have version, date of change and relevant changes of that release versio
 ## [0.9.4] - [30-Jan-2026]
 - Title, about and skill description update.
 - Bold shadow update
+
+## [0.9.5] - [01-Feb-2026]
+- Portfolio image update
+  - Image content update
+  - Image stylesheet update
+- Bold experience and project update
+- Background color update
+- Section wise transform update

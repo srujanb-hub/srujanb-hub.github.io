@@ -11,16 +11,18 @@
     --default-padding: clamp(0.5rem, 1.5vw, 1rem); /* scales padding 8px -> 16px */
     --default-shadow: #001fbd 0px 4px 15px;
     --default-bold-shadow: #001fbd 2px 6px 17px;
+    --default-hover-zoom-effect: scale(1.055);
     --section-primary-background: linear-gradient(135deg, #59b5f7, #6c76ff);
     --section-secondary-background: linear-gradient(135deg, #6c76ff, #59b5f7);
     --section-padding: clamp(1rem, 2vw, 1.5rem); /* scales padding 16px -> 24px */
     --section-min-width: 30%;                     /* minimum width for sections */
     --section-margin: clamp(2rem, 1vw, 1rem);  /* scales margin 32px -> 16px */
     --section-text-color: linear-gradient(135deg, #001fbd, #0056b3); /* darker blue gradient */
+    --section-hover-zoom-effect: scale(1.015);
 }
 
 html {
-    background-color: var(--default-color);
+    background-color: #f0f8ff; /* AliceBlue */
     color: var(--default-text-color);
     font-style: normal;
     font-family: 'Times New Roman', Times, serif;
@@ -82,6 +84,34 @@ menu li a:focus {
     border-radius: 30px;
 }
 
+.portfolio-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.portfolio-image::before {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #667eea, #764ba2, #f093fb, #667eea);
+    z-index: -1;
+    animation: rotateGradient 6s linear infinite;
+}
+
+.portfolio-image:hover {
+    transform: var(--default-hover-zoom-effect);
+}
+
+@keyframes rotateGradient {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -133,10 +163,6 @@ p:hover {
     text-shadow: var(--default-shadow);
 }
 
-b {
-    text-shadow: var(--default-bold-shadow);
-}
-
 a {
     color: var(--default-hyperlink-color, #007bff);
     text-decoration: none;
@@ -176,7 +202,7 @@ a:hover {
 }
 
 .about-section:hover{
-    transform: translateY(-2px);
+    transform: var(--section-hover-zoom-effect);
     color: var(--default-color); /* Reaffirm text color */
     box-shadow: var(--default-shadow);
 }
@@ -191,7 +217,7 @@ a:hover {
 }
 
 .experience-section:hover{
-    transform: translateY(-2px);
+    transform: var(--section-hover-zoom-effect);
     color: var(--default-color); /* Reaffirm text color */
     box-shadow: var(--default-shadow);
 }
@@ -242,11 +268,11 @@ a:hover {
     margin-right: 0.5rem;
     margin-bottom: 0.3rem;
     transition: transform 0.2s ease, background 0.3s ease;
+    box-shadow: var(--default-shadow);
 }
 
 .tech-tag:hover {
     transform: translateY(-1px);
-    box-shadow: var(--default-shadow);
 }
 
 .projects-section {
@@ -259,7 +285,7 @@ a:hover {
 }
 
 .projects-section:hover{
-    transform: translateY(-2px);
+    transform: var(--section-hover-zoom-effect);
     color: var(--default-color); /* Reaffirm text color */
     box-shadow: var(--default-shadow);
 }
@@ -274,7 +300,7 @@ a:hover {
 }
 
 .skills-section:hover{
-    transform: translateY(-2px);
+    transform: var(--section-hover-zoom-effect);
     color: var(--default-color); /* Reaffirm text color */
     box-shadow: var(--default-shadow);
 }
@@ -313,7 +339,7 @@ a:hover {
 }
 
 .education-section:hover{
-    transform: translateY(-2px);
+    transform: var(--section-hover-zoom-effect);
     color: var(--default-color); /* Reaffirm text color */
     box-shadow: var(--default-shadow);
 }
@@ -328,7 +354,7 @@ a:hover {
 }
 
 .awards-section:hover{
-    transform: translateY(-2px);
+    transform: var(--section-hover-zoom-effect);
     color: var(--default-color); /* Reaffirm text color */
     box-shadow: var(--default-shadow);
 }
@@ -343,7 +369,7 @@ a:hover {
 }
 
 .resume-section:hover{
-    transform: translateY(-2px);
+    transform: var(--section-hover-zoom-effect);
     color: var(--default-color); /* Reaffirm text color */
     box-shadow: var(--default-shadow);
 }
@@ -358,7 +384,7 @@ a:hover {
 }
 
 .contact-section:hover{
-    transform: translateY(-2px);
+    transform: var(--section-hover-zoom-effect);
     color: var(--default-color); /* Reaffirm text color */
     box-shadow: var(--default-shadow);
 }
@@ -394,7 +420,7 @@ a:hover {
 
 .contact-links a:hover {
     background: linear-gradient(45deg, #6c76ff, #59b5f7); /* Flipped gradient */
-    transform: translateY(-2px);
+    transform: var(--section-hover-zoom-effect);
     color: var(--default-hover-color); /* Reaffirm text color */
     box-shadow: var(--default-hyperlink-shadow);
     text-shadow: var(--default-shadow);
