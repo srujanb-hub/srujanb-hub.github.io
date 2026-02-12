@@ -89,3 +89,7 @@ _It can have version, date of change and relevant changes of that release versio
 - Bold experience and project update
 - Background color update
 - Section wise transform update
+
+## [0.9.6] - [12-Feb-2026]
+- Resume update
+- Experience: domain/system logo update

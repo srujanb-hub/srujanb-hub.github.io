@@ -222,6 +222,121 @@ a:hover {
     box-shadow: var(--default-shadow);
 }
 
+.job[data-company="SanDisk"] h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.job[data-company="SanDisk"] h3::after {
+    content: '';
+    width: 60px;
+    height: 30px;
+    background-image: url('../images/usb.jpg');
+    background-size: 100%;
+    background-position: center;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.job[data-company="SanDisk"]:hover h3::after {
+    opacity: 1;
+}
+
+.job[data-company="Amadeus"] h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.job[data-company="Amadeus"] h3::after {
+    content: '';
+    width: 60px;
+    height: 30px;
+    background-image: url('../images/airline.jpg');
+    background-size: 120%;
+    background-position: center;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.job[data-company="Amadeus"]:hover h3::after {
+    opacity: 1;
+}
+
+.job[data-company="Honeywell"] h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.job[data-company="Honeywell"] h3::after {
+    content: '';
+    width: 60px;
+    height: 30px;
+    background-image: url('../images/cam_aero.jpg');
+    background-size: 100%;
+    background-position: center;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.job[data-company="Honeywell"]:hover h3::after {
+    opacity: 1;
+}
+
+.job[data-company="TCS"] h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.job[data-company="TCS"] h3::after {
+    content: '';
+    width: 60px;
+    height: 30px;
+    background-image: url('../images/telecom.jpg');
+    background-size: 90%;
+    background-position: center;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.job[data-company="TCS"]:hover h3::after {
+    opacity: 1;
+}
+
+.job[data-company="MagnaQuest"] h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.job[data-company="MagnaQuest"] h3::after {
+    content: '';
+    width: 60px;
+    height: 30px;
+    background-image: url('../images/smartcard.jpg');
+    background-size: 85%;
+    background-position: center;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.job[data-company="MagnaQuest"]:hover h3::after {
+    opacity: 1;
+}
+
 .experience-section input {
     max-width: 15%;
     padding: var(--default-padding);
