@@ -514,39 +514,12 @@ a:hover {
     justify-content: center;
 }
 
-.contact-links li {
-    margin: 0;      /* Remove default margin */
-}
-
 .contact-links a {
-    display: block;
-    width: 80%;
-    padding: var(--default-padding) clamp(0.75rem, 2vw, 1.25rem); /* scales padding */
-    text-align: center;
-    text-decoration: none;
-    color: var(--default-text-color);
-    background: linear-gradient(45deg, #59b5f7, #6c76ff);
-    border: 1.5px solid var(--default-color);
-    border-radius: clamp(0.75rem, 3vw, 1.5rem); /* 12px -> 24px */
-    cursor: pointer;
-    transition: transform 0.2s ease, background 0.3s ease;
-    font-size: clamp(00.875rem, 2vw, 1rem); /* Responsive font size - 14px to 16px */
-}
-
-.contact-links a:hover {
-    background: linear-gradient(45deg, #6c76ff, #59b5f7); /* Flipped gradient */
-    transform: var(--section-hover-zoom-effect);
-    color: var(--default-hover-color); /* Reaffirm text color */
-    box-shadow: var(--default-hyperlink-shadow);
-    text-shadow: var(--default-shadow);
-}
-
-.contact-links a:active {
-    transform: translateY(0);
-}
-
-.contact-links a:focus {
-    outline: 2px solid blue;
-    outline-offset: 2px;
-    border-radius: 20px;
+    color: revert;
+    text-decoration: revert;
+    border-radius: revert;
+    padding: revert;
+    transition: revert;
+    display: revert;
+    text-shadow: revert;
 }

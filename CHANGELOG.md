@@ -96,3 +96,8 @@ _It can have version, date of change and relevant changes of that release versio
 
 ## [0.9.7] - [15-Feb-2026]
 - GitHub page update
+
+## [0.9.8] - [16-Feb-2026]
+- Project section update
+- Contact me icon update
+- Readme file update
