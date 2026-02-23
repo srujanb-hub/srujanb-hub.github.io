@@ -101,3 +101,7 @@ _It can have version, date of change and relevant changes of that release versio
 - Project section update
 - Contact me icon update
 - Readme file update
+
+## [0.9.9] - [23-Feb-2026]
+- Skill description update
+- CSS environment variable update

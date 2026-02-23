@@ -12,6 +12,8 @@
     --default-shadow: #001fbd 0px 4px 15px;
     --default-bold-shadow: #001fbd 2px 6px 17px;
     --default-hover-zoom-effect: scale(1.055);
+    --default-transition: transform 0.2s ease, background 0.3s ease;
+    --default-transform: translateY(-1px);
     --section-primary-background: linear-gradient(135deg, #59b5f7, #6c76ff);
     --section-secondary-background: linear-gradient(135deg, #6c76ff, #59b5f7);
     --section-padding: clamp(1rem, 2vw, 1.5rem); /* scales padding 16px -> 24px */
@@ -61,7 +63,7 @@ menu li a {
     background: linear-gradient(45deg, #59b5f7, #6c76ff);
     border-radius: var(--default-border-radius);
     cursor: pointer;
-    transition: transform 0.2s ease, background 0.3s ease;
+    transition: var(--default-transition);
     font-size: clamp(0.875rem, 2vw, 1.125rem); /* Responsive font size - 14px -> 18px */
 }
 
@@ -127,39 +129,39 @@ h1 {
     font-size: clamp(1.5rem, 4vw, 3.75rem); /* Responsive font size - 24px to 60px */
     text-align: center;
     text-shadow: 2px 2px 2px black;
-    transition: transform 0.2s ease, background 0.3s ease;
+    transition: var(--default-transition);
 }
 
 h1:hover {
-    transform: translateY(-1px);
+    transform: var(--default-transform);
 }
 
 h2 {
-    transition: transform 0.2s ease, background 0.3s ease;
+    transition: var(--default-transition);
 }
 
 h2:hover {
-    transform: translateY(-1px);
+    transform: var(--default-transform);
     text-shadow: var(--default-shadow);
 }
 
 h3 {
-    transition: transform 0.2s ease, background 0.3s ease;
+    transition: var(--default-transition);
 }
 
 h3:hover {
-    transform: translateY(-1px);
+    transform: var(--default-transform);
     text-shadow: var(--default-shadow);
 }
 
 p {
     font-size: clamp(1rem, 2.5vw, 1.25rem); /* Responsive font size - 16px to 20px */
     text-align: center;
-    transition: transform 0.2s ease, background 0.3s ease;
+    transition: var(--default-transition);
 }
 
 p:hover {
-    transform: translateY(-1px);
+    transform: var(--default-transform);
     text-shadow: var(--default-shadow);
 }
 
@@ -168,7 +170,7 @@ a {
     text-decoration: none;
     border-radius: var(--default-border-radius, 4px);
     padding: 0.2em 0.3em;
-    transition: transform 0.2s ease, background 0.3s ease;
+    transition: var(--default-transition);
     display: inline-block;
     text-shadow: var(--default-shadow);
 }
@@ -179,18 +181,10 @@ a:hover {
     color: var(--default-hyperlink-hover-color, #0056b3);
     background-color: var(--default-hyperlink-hover-background, rgba(154, 205, 50, 0.3));
     text-decoration: none;
-    transform: translateY(-1px);
+    transform: var(--default-transform);
     text-shadow: var(--default-shadow);
     box-shadow: var(--default-hyperlink-shadow);
 }
-
-/* .title-caption {
-    background: var(--section-primary-background);
-    padding: var(--default-padding);
-    border-radius: var(--default-border-radius);
-    color: var(--default-color);
-    min-width: var(--section-min-width);
-} */
 
 .about-section {
     background: var(--section-primary-background);
@@ -361,14 +355,6 @@ a:hover {
     min-width: 20px;             /* Prevent tiny squished buttons */
 }
 
-/* .category-filter {
-    margin: 1rem 0;
-    padding: 0.5rem;
-    background: #f0f8ff;
-    border-radius: 8px;
-    display: inline-block;
-}*/
-
 .tech-tags {
     margin-top: 0.5rem;
 }
@@ -382,12 +368,12 @@ a:hover {
     font-size: 0.85rem;
     margin-right: 0.5rem;
     margin-bottom: 0.3rem;
-    transition: transform 0.2s ease, background 0.3s ease;
+    transition: var(--default-transition);
     box-shadow: var(--default-shadow);
 }
 
 .tech-tag:hover {
-    transform: translateY(-1px);
+    transform: var(--default-transform);
 }
 
 .projects-section {

@@ -11,7 +11,7 @@ A custom web application to facilitate my personal portfolio.
 
 ## Credits
 
-| S.No  | Utility or Tool Name                    |   Credit for                                               |
+| Seq No| Utility or Tool Name                    |   Credit for                                               |
 |-------|-----------------------------------------|------------------------------------------------------------|
 |   1   | VS Code                                 | Development Tool                                           |
 |   2   | Mozilla dev documentation               | HTML element references                                    |
